@@ -724,14 +724,16 @@ width: 100%;
     margin-top: 0px;
   }
   .blog_container_first{
-    height: 530px;
+    width: 50%;
+    height: 100%;
   }
   .blog_container_first_text{
-    height: 230px;
+    width: 100%;
+    height: 100%;
   }
   .blog_container_first_text h3{
+    width: 100%;
     margin-bottom: 20px;
-
   }
   .blog_containers_second{
     padding: 0% 15%;
@@ -1054,10 +1056,40 @@ width: 100%;
 }
 
 @media screen and (max-width: 740px) {
+  .blog h1{
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+  }
+  .blog_container_first{
+    width: 90%;
+    height: 100%;
+  }
+  .blog_container_first_text{
+    width: 100%;
+  }
+  .blog_container_first_text h3{
+    width: 100%;
+  }
+
   .blog_containers_second{
     display: flex;
     flex-direction: column;
+    align-content: center;
   }
+  .blog_container_second{
+    width: 80%;
+    height: 100%;
+  }
+  .blog_container_second_text{
+    width: 100%;
+    height: 100%;
+  }
+  .blog_container_second_text h3{
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
 }
 
 @media screen and (max-width: 680px) {
@@ -1126,7 +1158,7 @@ width: 100%;
   }
   .cta .cta_text h3{
     margin-bottom: 0px;
-    
+
   }
   .cta .cta_button button{
     width: 150px;
@@ -1156,12 +1188,33 @@ width: 100%;
   .blog{
     margin-top: 35px;
   }
+  .blog_container_second_text h3{
+    font-size: 19px;
+  }
 }
-
 
 @media screen and (max-width: 445px) {
   .header .header__menu .menu__close {
     right: -20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .blog h1{
+    font-size: 22px;
+  }
+  .blog_container_first{
+    width: 100%;
+    height: 100%;
+  }
+  .blog_container_second{
+    width: 100%;
+    height: 100%;
+  }
+  .blog_container_first_text h3{
+    font-size: 19px;
+  }
+  .blog_container_second_text h3{
+    font-size: 17px;
   }
 }
 
