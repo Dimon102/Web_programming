@@ -1,15 +1,49 @@
-export const FootMenuItems = [
-    {
-      header: "Ссылки",
-      href: ["#", "#" , "#" , "#"],
-      text: ["Овероны", "Соц. сети" , "Счетчики" , "Контакты"]
-    },
-    {
-        header: "Компания",
-        href: ["#", "#" , "#"],
-        text: ["Условия использования", "Перс. данные" , "Конаткты"]
-    },
-  ];
+  export const FootMenuFirstItem = [
+      {
+        href: "#",
+        text: "Овероны"
+      },
+      {
+        href: "#",
+        text: "Соц. сети"
+      },
+      {
+        href: "#",
+        text: "Счетчики"
+      },
+      {
+        href: "#",
+        text: "Контакты"
+      },
+    ];
+    export const FootMenuSecondItem = [
+      {
+        href: "#",
+        text: "Условия использования"
+      },
+      {
+        href: "#",
+        text: "Перс. данные"
+      },
+      {
+        href: "#",
+        text: "Конаткты"
+      },
+    ];
+    export const FootMenuThirdtItem = [
+      {
+        href: "#",
+        text: "ул. Профессора Поздеева, 13, к.Г, Пермь"
+      },
+      {
+        href: "#",
+        text: "+7 (342) 2-198-520"
+      },
+      {
+        href: "#",
+        text: "info@pstu.ru"
+      },
+    ];
   
   export const logo = {
     class: "link__name",
@@ -30,6 +64,8 @@ export const FootMenuItems = [
     buttonText,
     logoDescription,
     logo,
-    FootMenuItems,
+    FootMenuFirstItem,
+    FootMenuSecondItem,
+    FootMenuThirdtItem,
   };
   

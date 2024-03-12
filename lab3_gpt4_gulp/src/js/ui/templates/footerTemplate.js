@@ -25,28 +25,41 @@ export const createHeaderTemplate = (header) => {
     `;
   };
 
-  export const createMenuItemsTemplate = (FootMenuItems) => {
-    return `
-    <div class="foot_menu_item">
+  export const createMenulinks = ({href, text}) => {
+      return `
+      <a href=${href}>${text}</a>
+      `;
+  };
+    
+  export const createMenuItemsTemplate = (FootMenuFirstItem, FootMenuSecondItem, FootMenuThirdtItem) => {
+    const firstItem = FootMenuFirstItem
+      .map((FootMenuFirstItem) => createMenulinks(FootMenuFirstItem))
+      .join("");
+
+    const secondItem = FootMenuSecondItem
+      .map((FootMenuSecondItem) => createMenulinks(FootMenuSecondItem))
+      .join("");
+    
+    const thirdItem = FootMenuThirdtItem
+      .map((FootMenuThirdtItem) => createMenulinks(FootMenuThirdtItem))
+      .join("");
+
+    const template = `
+      <div class="foot_menu_item">
         <h3>Ссылки</h3>
-        <a href="">Овероны</a>
-        <a href="">Соц. сети</a>
-        <a href="">Счетчики</a>
-        <a href="">Контакты</a>
-    </div>
-    <div class="foot_menu_item">
+        ${firstItem}
+      </div>
+      <div class="foot_menu_item">
         <h3>Компания</h3>
-        <a href="">Условия использования</a>
-        <a href="">Перс. данные</a>
-        <a href="">Конаткты</a>
-    </div>
-    <div class="foot_menu_item foot_menu_items_end">
+        ${secondItem}
+      </div>
+      <div class="foot_menu_item foot_menu_items_end">
         <h3>Контакты</h3>
-        <p>ул. Профессора Поздеева, 13, к.Г, Пермь</p>
-        <p>+7 (342) 2-198-520</p>
-        <a href="">info@pstu.ru</a>
-    </div>
+        ${thirdItem}
+      </div>
     `;
+
+    return template;
   };
   
   export const footerTemplate = ({
@@ -54,12 +67,14 @@ export const createHeaderTemplate = (header) => {
     buttonText,
     logoDescription,
     logo,
-    FootMenuItems,
+    FootMenuFirstItem,
+    FootMenuSecondItem,
+    FootMenuThirdtItem,
   }) => {
     const headerTemplate = createHeaderTemplate(header);
     const buttonTemplate = createButtonTemplate(buttonText);
     const menuStartTemplate = createMenuStartTemplate(logo, logoDescription);
-    const menuItemsTemplate = createMenuItemsTemplate(FootMenuItems);
+    const menuItemsTemplate = createMenuItemsTemplate(FootMenuFirstItem, FootMenuSecondItem, FootMenuThirdtItem);
 
 
   
