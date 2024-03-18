@@ -3,6 +3,8 @@ import Hero from "../components/Hero";
 import Brands from "../components/Brands";
 import WhatIsChatGpt from "../components/WhatIsChatGpt";
 import FutureHere from "../components/FutureHere";
+import Expectations from "../components/Expectations";
+import Cta from "../components/Cta";
 
 const Home = () => {
   return (
@@ -22,6 +24,13 @@ const Home = () => {
       <section className="section future_here">
         <FutureHere />
       </section>
+      <section className="section expectations">
+        <Expectations />
+      </section>
+      <section className="cta">
+        <Cta />
+      </section>
+
     </>
   );
 };

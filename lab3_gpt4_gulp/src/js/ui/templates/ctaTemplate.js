@@ -16,7 +16,7 @@ export const createTextTemplate = (text) => {
 
 export const createButtonTemplate = (button) => {
     return `
-        <button><h3>${button}<h3></button>
+        <button><h3>${button}</h3></button>
     `;
 };
 

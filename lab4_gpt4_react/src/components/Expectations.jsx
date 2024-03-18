@@ -1,59 +1,43 @@
-export const createTitleTemplate = (title) => {
-    return `
-        <h2>
-            ${title}
-        </h2>
-    `;
-  };
-  export const createEarlyAccessTopTemplate = (early_access) => {
-    return `
-    <a href="#" class="left_cta_blue">${early_access}</a>
-    `;
-  };
-  export const createEarlyAccessBotTemplate = (early_access) => {
-    return `
-    <a href="#" class="left_cta_orange">${early_access}</a>
-    `;
-  };
-  
-  
-  export const createDescriptionTemplate = (description) => {
-    return `
-      <p>
-        ${description}
-      </p>
-    `;
-  };
-  
-  export const createIllustrationTemplate = ({ src, alt }) => {
-    return `
-      <img src="${src}" alt="${alt}" />
-    `;
-  };
-  
-  export const expectationsTemplate = ({
-    early_access,
-    illustration,
-    title,
-    description,
-  }) => {
-    const titleTemplate = createTitleTemplate(title);
-    const early_accessTopTemplate = createEarlyAccessTopTemplate(early_access);
-    const early_accessBotTemplate = createEarlyAccessBotTemplate(early_access);
-    const descriptionTemplate = createDescriptionTemplate(description);
-    const illustrationTemplate = createIllustrationTemplate(illustration);
-  
-    const resultTemplate = `
-    <div class="expectations_section_img">
-        ${illustrationTemplate}
-    </div>
-    <div class="expectations_section_text">
-        ${early_accessTopTemplate}
-        ${titleTemplate}
-        ${descriptionTemplate}
-        ${early_accessBotTemplate}
-    </div>
-    `;
+import { expectationsData } from "../mockData/expectationsData";
+import IllustrationWoman from "../assets/img/expectations/woman.png";
 
-    return resultTemplate;
-  };
+export const Title = ({ title }) => {
+    return <h2>{title}</h2>;
+};
+
+export const EarlyAccessTop = ({ early_access }) => {
+  return <a href="#" className="left_cta_blue">{early_access}</a>;
+};
+
+export const EarlyAccessBot = ({ early_access }) => {
+  return <a href="#" className="left_cta_orange">{early_access}</a>;
+};
+
+export const Description = ({ description }) => {
+  return <p>{description}</p>;
+};
+
+export const Illustration = ({ illustration }) => {
+  const { alt } = illustration;
+  return <img src={IllustrationWoman} alt={alt} />;
+};
+
+const Expectations = () => {
+  const {early_acces, illustration, title, description,} = expectationsData;
+
+  return (
+    <>
+    <div className="expectations_section_img">
+      <Illustration illustration={illustration}/>
+    </div>
+    <div className="expectations_section_text">
+        <EarlyAccessTop early_acces={early_acces}/>
+        <Title title={title}/>
+        <Description description={description}/>
+        <EarlyAccessBot early_acces={early_acces}/>
+    </div>
+    </>
+  );
+};
+
+export default Expectations;

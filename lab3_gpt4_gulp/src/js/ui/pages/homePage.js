@@ -16,7 +16,7 @@ const initHomePage = (element) => {
     <section class="section brands_section"></section>
     <section class="section what_is_chatgpt_section"></section>
     <section class="section future_here"></section>
-    <section class = "section expectations"></section>
+    <section class="section expectations"></section>
     <section class="cta"></section>
     <section class="section blog"></section>
     <section class="section foot"></section>
