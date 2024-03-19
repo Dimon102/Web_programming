@@ -1,48 +1,49 @@
-export const BlogContainersRight = [
+export const blogContainersRight = [
     {
         date: "Сент 26, 2021",
         header: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
         text: "Читать полную статью",
         src: "./assets/img/blog/1.png",
-        alt: "",
+        alt: "1",
     },
-  ];
-export const BlogContainersLeft = [
+];
+export const blogContainersLeft = [
     {
         date: "Сент 26, 2021",
         header: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
         text: "Читать полную статью",
         src: "./assets/img/blog/2.png",
-        alt: "",
+        alt: "2",
     },
     {
         date: "Сент 26, 2021",
         header: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
         text: "Читать полную статью",
         src: "./assets/img/blog/3.png",
-        alt: "",
+        alt: "3",
     },
     {
         date: "Сент 26, 2021",
         header: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
         text: "Читать полную статью",
         src: "./assets/img/blog/4.png",
-        alt: "",
+        alt: "4",
     },
     {
         date: "Сент 26, 2021",
         header: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
         text: "Читать полную статью",
         src: "./assets/img/blog/5.png",
-        alt: "",
+        alt: "5",
     },
-  ];
-  
-  export const header =
-    "Многое Происходит, Мы Ведем об Этом Блог.";
-  
-  export const blogData = {
+];
+
+export const header ="Многое Происходит, Мы Ведем об Этом Блог.";
+
+const blogData = {
     header,
-    BlogContainersLeft,
-    BlogContainersRight,
-  };
+    blogContainersLeft,
+    blogContainersRight,
+};
+
+export default blogData;
