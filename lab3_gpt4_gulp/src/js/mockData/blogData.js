@@ -3,8 +3,10 @@ export const BlogContainersRight = [
         date: "Сент 26, 2021",
         header: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
         text: "Читать полную статью",
-        src: "./assets/img/blog/1.png",
-        alt: "",
+        imagine: {
+          src: "./assets/img/blog/1.png",
+          alt: "",
+        },
     },
   ];
 export const BlogContainersLeft = [
@@ -12,29 +14,37 @@ export const BlogContainersLeft = [
         date: "Сент 26, 2021",
         header: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
         text: "Читать полную статью",
-        src: "./assets/img/blog/2.png",
-        alt: "",
+        imagine: {
+          src: "./assets/img/blog/2.png",
+          alt: "",
+        },
     },
     {
         date: "Сент 26, 2021",
         header: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
         text: "Читать полную статью",
-        src: "./assets/img/blog/3.png",
-        alt: "",
+        imagine: {
+          src: "./assets/img/blog/3.png",
+          alt: "",
+        },
     },
     {
         date: "Сент 26, 2021",
         header: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
         text: "Читать полную статью",
-        src: "./assets/img/blog/4.png",
-        alt: "",
+        imagine: {
+          src: "./assets/img/blog/4.png",
+          alt: "",
+        },
     },
     {
         date: "Сент 26, 2021",
         header: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
         text: "Читать полную статью",
-        src: "./assets/img/blog/5.png",
-        alt: "",
+        imagine: {
+          src: "./assets/img/blog/5.png",
+          alt: "",
+        },
     },
   ];
   

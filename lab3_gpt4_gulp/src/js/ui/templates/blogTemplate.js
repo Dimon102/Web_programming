@@ -6,7 +6,9 @@ export const createHeaderTemplate = (header) => {
     `;
   };
   
-  export const createContainerRightTemplate = ({ date, header, text, src, alt }) => {
+  export const createContainerRightTemplate = ({ date, header, text, imagine}) => {
+    const {src, alt} = imagine;
+
     return `
     <div class="blog_container_first">
         <img src=${src} alt=${alt}>
@@ -31,7 +33,9 @@ ${ContainersRightTemplate}
 return template;
 };
 
-  export const createContainerLeftTemplate = ({ date, header, text, src, alt }) => {
+  export const createContainerLeftTemplate = ({ date, header, text, imagine }) => {
+    const {src, alt} = imagine;
+    
         return `
         <div class="blog_container_second">
             <img src=${src} alt=${alt}>
